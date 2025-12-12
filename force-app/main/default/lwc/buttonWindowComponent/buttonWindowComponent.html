@@ -1,0 +1,39 @@
+<template>
+    <template if:true={showButton}>
+        <div class="slds-m-around_medium">
+            <lightning-input
+                type="text"
+                label="Enter URL"
+                value={dynamicUrl}
+                onchange={handleUrlChange}>
+            </lightning-input>
+
+            <lightning-button
+                label="Open Window"
+                variant="brand"
+                onclick={openWindow}>
+            </lightning-button>
+        </div>
+    </template>
+
+    <template if:true={showCompletion}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium">Status</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <p>Completed</p>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning-button
+                        label="Finish"
+                        variant="brand"
+                        onclick={handleFinish}>
+                    </lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>
