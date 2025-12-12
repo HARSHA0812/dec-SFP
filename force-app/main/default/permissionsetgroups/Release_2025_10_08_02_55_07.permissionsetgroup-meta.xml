@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
-    <hasActivationRequired>false</hasActivationRequired>
-    <label>Release_2025_10_08_02_55_07</label>
-    <permissionSets>Release_2025_10_08_02_55_07_PS</permissionSets>
-    <status>Updated</status>
-</PermissionSetGroup>
